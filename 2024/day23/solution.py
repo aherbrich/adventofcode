@@ -17,7 +17,7 @@ class Solution:
         graph = self.readFile(filename)
         
         cliques = set()
-        for node in graph:
+        for node in graph.keys():
             neighbors = graph[node]
             for n1 in neighbors:
                 for n2 in neighbors:
